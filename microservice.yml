@@ -1,0 +1,44 @@
+omg: 1
+lifecycle:
+  startup:
+    command: ["node", "index.js"]
+info:
+  version: 1.0.0
+  title: Base64 utils  
+  description: This is a simple base64 encoder/decoder
+  contact:
+    name: Jean Barriere
+    url: https://github.com/JeanBarriere
+    email: jean@barriere.io
+  license:
+    name: MIT
+    url: https://opensource.org/licenses/MIT 
+actions:
+  encode:
+    help: Encode a string to base64
+    arguments:
+      content:
+        type: string
+        in: requestBody
+        help: The content to encode
+    http:
+      port: 5000
+      method: post
+      path: /encode
+      contentType: application/json
+    output:
+      type: string
+  decode:
+    help: Decode a string encoded in base64
+    arguments:
+      content:
+        type: string
+        in: requestBody
+        help: The content to decode
+    http:
+      port: 5000
+      method: post
+      path: /decode
+      contentType: text/plain
+    output:
+      type: string

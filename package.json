@@ -1,0 +1,17 @@
+{
+  "name": "omg-base64",
+  "version": "1.0.0",
+  "description": "base64 microservice for OMG",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/microservice/base64.git"
+  },
+  "author": "Jean Barriere",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/microservice/base64/issues"
+  },
+  "homepage": "https://github.com/microservice/base64#readme",
+  "dependencies": {}
+}
