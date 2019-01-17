@@ -5,13 +5,13 @@
   "main": "index.js",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/microservice/base64.git"
+    "url": "git+https://github.com/heaptracetechnology/base64-microservice"
   },
-  "author": "Jean Barriere",
+  "author": "Deva Chormale",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/microservice/base64/issues"
+    "url": "https://github.com/heaptracetechnology/base64-microservice"
   },
-  "homepage": "https://github.com/microservice/base64#readme",
+  "homepage": "https://github.com/heaptracetechnology/base64-microservice#readme",
   "dependencies": {}
 }
