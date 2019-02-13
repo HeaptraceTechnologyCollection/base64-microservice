@@ -1,5 +1,5 @@
 FROM node:current-alpine
 
-ADD index.js index.js
+ADD app.js app.js
 
-ENTRYPOINT ["node", "index.js"]
+ENTRYPOINT ["node", "app.js"]

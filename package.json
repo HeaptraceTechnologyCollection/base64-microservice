@@ -2,16 +2,25 @@
   "name": "omg-base64",
   "version": "1.0.0",
   "description": "base64 microservice for OMG",
-  "main": "index.js",
+  "main": "app.js",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/heaptracetechnology/base64-microservice"
   },
-  "author": "Deva Chormale",
+  "author": "Rohit Shetty",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/heaptracetechnology/base64-microservice"
   },
   "homepage": "https://github.com/heaptracetechnology/base64-microservice#readme",
-  "dependencies": {}
+  "dependencies": {},
+  "devDependencies": {
+    "mocha": "^2.3.4",
+    "should": "^7.1.1",
+    "supertest": "~1.1.0"
+  },
+  "scripts": {
+    "start": "node app.js",
+    "test": "mocha"
+  }
 }

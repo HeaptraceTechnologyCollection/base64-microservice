@@ -1,10 +1,45 @@
-# base64
-An OMG service to encode/decode Base64 content
+# Base64 as a microservice
+An OMG service to encode/decode Base64 content.
 
-### Usage
+[![Open Microservice Guide](https://img.shields.io/badge/OMG-enabled-brightgreen.svg?style=for-the-badge)](https://microservice.guide)
 
-```coffee
-# Storyscript
-encoded = base64 encode content: "hello world"
-decoded = base64 decode content: encoded
+This microservice's goal is to encode/decode Base64 content.
+
+## [OMG](hhttps://microservice.guide) CLI
+
+### OMG
+
+* omg validate
+```
+omg validate
+```
+* omg build
+```
+omg build
+```
+### Test Service
+
+* If provide content for decode service will return base64 string as output and If base64 content are provide for decode service will return the decoded string.
+
+### CLI
+#### Encode
+```sh
+$ omg exec encode -a content=<CONTENT_FOR_ENCODE>
+```
+#### Decode
+```sh
+$ omg exec decode -a content=<CONTENT_FOR_DECODE>
+```
+
+## License
+### [MIT](https://choosealicense.com/licenses/mit/)
+
+## Docker
+### Build
+```
+docker build --rm -f "Dockerfile" -t base64:latest .
+```
+### RUN
+```
+docker run -p 5000:5000 base64:latest
 ```
