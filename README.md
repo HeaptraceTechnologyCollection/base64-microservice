@@ -24,11 +24,11 @@ omg build
 ### CLI
 #### Encode
 ```sh
-$ omg exec encode -a content=<CONTENT_FOR_ENCODE>
+$ omg run encode -a content=<CONTENT_FOR_ENCODE>
 ```
 #### Decode
 ```sh
-$ omg exec decode -a content=<CONTENT_FOR_DECODE>
+$ omg run decode -a content=<CONTENT_FOR_DECODE>
 ```
 
 ## License
