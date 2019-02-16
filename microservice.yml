@@ -4,7 +4,7 @@ lifecycle:
     command: ["node", "app.js"]
 info:
   version: 1.0.0
-  title: Base64 utils  
+  title: Base64 utils
   description: This is a simple base64 encoder/decoder
   contact:
     name: Rohit Shetty
@@ -28,6 +28,10 @@ actions:
       contentType: application/json
     output:
       type: string
+      properties:
+        content:
+          help: The base64 conversion from string
+          type: string
   decode:
     help: Decode a string encoded in base64
     arguments:
@@ -42,3 +46,7 @@ actions:
       contentType: text/plain
     output:
       type: string
+      properties:
+        content:
+          help: The conversion from base64 to string
+          type: string
